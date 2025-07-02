@@ -31,7 +31,7 @@
     "dev": "yarn start & cd example && yarn start"
   },
   "peerDependencies": {
-    "react": "^16.0.0"
+    "react": "^19.0.0"
   },
   "devDependencies": {
     "@parcel/packager-ts": "^2.0.0",
