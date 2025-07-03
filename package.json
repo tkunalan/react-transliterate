@@ -2,14 +2,14 @@
   "name": "new-react-transliterate",
   "version": "1.1.1",
   "description": "Transliterate component for React",
-  "author": "burhanuday",
+  "author": "kuna",
   "license": "MIT",
-  "repository": "burhanuday/react-transliterate",
+  "repository": "tkunalan/react-transliterate",
   "types": "dist/types.d.ts",
   "keywords": [
     "react",
     "transliterate",
-    "english to hindi"
+    "english to tamil"
   ],
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
@@ -40,12 +40,12 @@
     "@testing-library/react": "^12.1.0",
     "@testing-library/user-event": "^13.2.1",
     "@types/jest": "^27.0.1",
-    "@types/node": "^12.12.38",
+    "@types/node": "^20.19.0",
     "@types/react": "^17.0.20",
     "@types/react-dom": "^17.0.9",
     "@types/textarea-caret": "^3.0.0",
-    "@typescript-eslint/eslint-plugin": "^2.26.0",
-    "@typescript-eslint/parser": "^2.26.0",
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
     "babel-eslint": "^10.0.3",
     "cross-env": "^7.0.2",
     "eslint": "^7.32.0",
@@ -64,8 +64,8 @@
     "parcel": "^2.0.0",
     "postcss": "^8.2.1",
     "prettier": "^2.0.4",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "react-scripts": "^4.0.3",
     "typescript": "^3.7.5"
   },
@@ -74,5 +74,6 @@
   ],
   "dependencies": {
     "textarea-caret": "^3.1.0"
-  }
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }

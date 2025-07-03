@@ -2,7 +2,10 @@
 
 Transliteration component for React with support for over 30 languages. Uses API from [Google Input Tools](https://www.google.com/inputtools)
 
-[![NPM](https://img.shields.io/npm/v/react-transliterate.svg)](https://www.npmjs.com/package/react-transliterate)
+This is a compatibility fork of [`react-transliterate`](https://github.com/burhanuday/react-transliterate)
+with updated peerDependencies to support React 19.
+
+[![NPM](https://img.shields.io/npm/v/react-transliterate.svg)](https://www.npmjs.com/package/new-react-transliterate)
 
 <p align="center">
 <img src="./assets/hi.gif"></img>
@@ -15,11 +18,11 @@ Transliteration component for React with support for over 30 languages. Uses API
 ## Install
 
 ```bash
-npm install --save react-transliterate
+npm install --save new-react-transliterate
 
 OR
 
-yarn add react-transliterate
+yarn add new-react-transliterate
 ```
 
 ## Usage
@@ -29,8 +32,8 @@ yarn add react-transliterate
 ```jsx
 import React, { useState } from "react";
 
-import { ReactTransliterate } from "react-transliterate";
-import "react-transliterate/dist/index.css";
+import { ReactTransliterate } from "new-react-transliterate";
+import "new-react-transliterate/dist/index.css";
 
 const App = () => {
   const [text, setText] = useState("");
@@ -54,8 +57,8 @@ export default App;
 ```jsx
 import React, { useState } from "react";
 
-import { ReactTransliterate } from "react-transliterate";
-import "react-transliterate/dist/index.css";
+import { ReactTransliterate } from "new-react-transliterate";
+import "new-react-transliterate/dist/index.css";
 
 const App = () => {
   const [text, setText] = useState("");
@@ -80,8 +83,8 @@ export default App;
 ```tsx
 import React, { useState } from "react";
 
-import { ReactTransliterate, Language } from "react-transliterate";
-import "react-transliterate/dist/index.css";
+import { ReactTransliterate, Language } from "new-react-transliterate";
+import "new-react-transliterate/dist/index.css";
 
 const App = () => {
   const [text, setText] = useState("");
@@ -107,8 +110,8 @@ export default App;
 ```tsx
 import React, { useState } from "react";
 
-import { ReactTransliterate, Language } from "react-transliterate";
-import "react-transliterate/dist/index.css";
+import { ReactTransliterate, Language } from "new-react-transliterate";
+import "new-react-transliterate/dist/index.css";
 
 import Input from "@material-ui/core/Input";
 
@@ -144,8 +147,8 @@ React Transliterate uses the `event.keycode` property to detect keys. Here are s
 ```jsx
 import React, { useState } from "react";
 
-import { ReactTransliterate, TriggerKeys } from "react-transliterate";
-import "react-transliterate/dist/index.css";
+import { ReactTransliterate, TriggerKeys } from "new-react-transliterate";
+import "new-react-transliterate/dist/index.css";
 
 import Input from "@material-ui/core/Input";
 
@@ -175,7 +178,7 @@ export default App;
 ## Get transliteration suggestions
 
 ```jsx
-import { getTransliterateSuggestions } from "react-transliterate";
+import { getTransliterateSuggestions } from "new-react-transliterate";
 
 const data = await getTransliterateSuggestions(
   word, // word to fetch suggestions for
@@ -252,4 +255,4 @@ For a full example, take a look at the `example` folder
 
 ## License
 
-MIT © [burhanuday](https://github.com/burhanuday)
+MIT © [tkunalan](https://github.com/tkunalan)
