@@ -1,11 +1,11 @@
-<h1 align="center">React Transliterate</h1>
+<h1 align="center">New React Transliterate</h1>
 
 Transliteration component for React with support for over 30 languages. Uses API from [Google Input Tools](https://www.google.com/inputtools)
 
 This is a compatibility fork of [`react-transliterate`](https://github.com/burhanuday/react-transliterate)
 with updated peerDependencies to support React 19.
 
-[![NPM](https://img.shields.io/npm/v/react-transliterate.svg)](https://www.npmjs.com/package/new-react-transliterate)
+[![NPM](https://img.shields.io/npm/v/new-react-transliterate.svg)](https://www.npmjs.com/package/new-react-transliterate)
 
 <p align="center">
 <img src="./assets/hi.gif"></img>
