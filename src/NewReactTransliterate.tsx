@@ -15,7 +15,7 @@ const KEY_ESCAPE = "Escape";
 const OPTION_LIST_Y_OFFSET = 10;
 const OPTION_LIST_MIN_WIDTH = 100;
 
-export const ReactTransliterate = ({
+export const NewReactTransliterate = ({
   renderComponent = (props) => <input {...props} />,
   lang = "hi",
   offsetX = 0,
@@ -41,7 +41,7 @@ export const ReactTransliterate = ({
   showCurrentWordAsLastSuggestion = true,
   enabled = true,
   ...rest
-}: ReactTransliterateProps): JSX.Element => {
+}: ReactTransliterateProps): React.JSX.Element => {
   const [options, setOptions] = useState<string[]>([]);
   const [left, setLeft] = useState(0);
   const [top, setTop] = useState(0);
@@ -178,6 +178,9 @@ export const ReactTransliterate = ({
   const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
     const helperVisible = options.length > 0;
 
+    // console.log("EVENT_KEY", event, triggerKeys.includes(event.key));
+    console.log("triggerKeys", triggerKeys, "event.key", event.key);
+
     if (helperVisible) {
       if (triggerKeys.includes(event.key)) {
         event.preventDefault();
@@ -291,5 +294,5 @@ export const ReactTransliterate = ({
   );
 };
 
-export type { ReactTransliterateProps, Language };
-export { TriggerKeys, getTransliterateSuggestions };
+// export type { ReactTransliterateProps, Language };
+// export { TriggerKeys, getTransliterateSuggestions };

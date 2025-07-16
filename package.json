@@ -1,6 +1,6 @@
 {
   "name": "new-react-transliterate",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "Transliterate component for React",
   "author": "kuna",
   "license": "MIT",
@@ -24,7 +24,7 @@
       "import": "./dist/index.es.js",
       "require": "./dist/index.umd.js"
     },
-    "./dist/new-react-transliterate.css": {
+    "./styles.css": {
       "default": "./dist/new-react-transliterate.css"
     }
   },
@@ -36,28 +36,21 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "prepare": "vite build",
-    "lint": "eslint src --ext .ts,.tsx",
-    "type-check": "tsc --noEmit",
-    "test": "echo \"No tests configured\""
+    "build": "vite build && tsc --emitDeclarationOnly",
+    "prepare": "vite build && tsc --emitDeclarationOnly",
+    "type-check": "tsc --noEmit"
   },
   "peerDependencies": {
-    "react": "^18.0.0 || ^19.0.0",
-    "react-dom": "^18.0.0 || ^19.0.0"
+    "react": ">=17.0.0",
+    "react-dom": ">=17.0.0"
   },
   "dependencies": {
     "textarea-caret": "^3.1.0"
   },
   "devDependencies": {
-    "@types/react": "^19.1.8",
-    "@types/react-dom": "^19.1.6",
-    "@types/textarea-caret": "^3.0.0",
+    "@types/react": "^18.2.47",
+    "@types/react-dom": "^18.2.17",
     "@vitejs/plugin-react": "^4.6.0",
-    "eslint": "^8.56.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-react": "^7.33.2",
-    "prettier": "^3.2.5",
     "typescript": "^5.4.5",
     "vite": "^7.0.3"
   },

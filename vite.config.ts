@@ -6,8 +6,8 @@ export default defineConfig({
   plugins: [react()],
   build: {
     lib: {
-      entry: path.resolve(__dirname, "src/index.tsx"),
-      name: "ReactTransliterate",
+      entry: path.resolve(__dirname, "src/index.ts"),
+      name: "NewReactTransliterate",
       formats: ["es", "umd"],
       fileName: (format) => `index.${format}.js`,
     },

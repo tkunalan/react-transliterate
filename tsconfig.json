@@ -1,12 +1,12 @@
 {
-  "include": ["src"],
-  "exclude": ["node_modules", "dist", "example"],
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
-    "jsx": "react-jsx", // ✅ Use automatic JSX runtime (React 17+)
-    "outDir": "dist",
-    "declaration": true,
+    "target": "ESNext", // Modern JS
+    "module": "ESNext", // ES module output
+    "lib": ["DOM", "ESNext"], // JSX.Element and DOM APIs
+    "jsx": "react-jsx", // React 17+ JSX runtime
+    "declaration": true, // Emit .d.ts files
+    "declarationDir": "dist", // Where to put .d.ts files
+    "outDir": "dist", // JS output path
     "moduleResolution": "node",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -15,5 +15,17 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true
-  }
+  },
+  "include": [
+    "src/**/*",
+    "src/styles.d.ts", // Include CSS module types
+    "playground"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "example",
+    "playground",
+    "**/*.test.tsx" // Exclude test files
+  ]
 }

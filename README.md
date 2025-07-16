@@ -32,14 +32,14 @@ yarn add new-react-transliterate
 ```jsx
 import React, { useState } from "react";
 
-import { ReactTransliterate } from "new-react-transliterate";
-import "new-react-transliterate/dist/index.css";
+import { NewReactTransliterate } from "new-react-transliterate";
+import "new-react-transliterate/styles.css";
 
 const App = () => {
   const [text, setText] = useState("");
 
   return (
-    <ReactTransliterate
+    <NewReactTransliterate
       value={text}
       onChangeText={(text) => {
         setText(text);
@@ -57,14 +57,14 @@ export default App;
 ```jsx
 import React, { useState } from "react";
 
-import { ReactTransliterate } from "new-react-transliterate";
-import "new-react-transliterate/dist/index.css";
+import { NewReactTransliterate } from "new-react-transliterate";
+import "new-react-transliterate/styles.css";
 
 const App = () => {
   const [text, setText] = useState("");
 
   return (
-    <ReactTransliterate
+    <NewReactTransliterate
       renderComponent={(props) => <textarea {...props} />}
       value={text}
       onChangeText={(text) => {
@@ -83,15 +83,15 @@ export default App;
 ```tsx
 import React, { useState } from "react";
 
-import { ReactTransliterate, Language } from "new-react-transliterate";
-import "new-react-transliterate/dist/index.css";
+import { NewReactTransliterate, Language } from "new-react-transliterate";
+import "new-react-transliterate/styles.css";
 
 const App = () => {
   const [text, setText] = useState("");
   const [lang, setLang] = useState<Language>("hi");
 
   return (
-    <ReactTransliterate
+    <NewReactTransliterate
       renderComponent={(props) => <textarea {...props} />}
       value={text}
       onChangeText={(text) => {
@@ -110,8 +110,8 @@ export default App;
 ```tsx
 import React, { useState } from "react";
 
-import { ReactTransliterate, Language } from "new-react-transliterate";
-import "new-react-transliterate/dist/index.css";
+import { NewReactTransliterate, Language } from "new-react-transliterate";
+import "new-react-transliterate/styles.css";
 
 import Input from "@material-ui/core/Input";
 
@@ -120,7 +120,7 @@ const App = () => {
   const [lang, setLang] = useState<Language>("hi");
 
   return (
-    <ReactTransliterate
+    <NewReactTransliterate
       renderComponent={(props) => {
         const inputRef = props.ref;
         delete props["ref"];
@@ -147,8 +147,8 @@ React Transliterate uses the `event.keycode` property to detect keys. Here are s
 ```jsx
 import React, { useState } from "react";
 
-import { ReactTransliterate, TriggerKeys } from "new-react-transliterate";
-import "new-react-transliterate/dist/index.css";
+import { NewReactTransliterate, TriggerKeys } from "new-react-transliterate";
+import "new-react-transliterate/styles.css";
 
 import Input from "@material-ui/core/Input";
 
@@ -156,7 +156,7 @@ const App = () => {
   const [text, setText] = useState("");
 
   return (
-    <ReactTransliterate
+    <NewReactTransliterate
       value={text}
       onChangeText={(text) => {
         setText(text);
