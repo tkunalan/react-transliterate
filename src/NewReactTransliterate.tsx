@@ -179,7 +179,6 @@ export const NewReactTransliterate = ({
     const helperVisible = options.length > 0;
 
     // console.log("EVENT_KEY", event, triggerKeys.includes(event.key));
-    console.log("triggerKeys", triggerKeys, "event.key", event.key);
 
     if (helperVisible) {
       if (triggerKeys.includes(event.key)) {
